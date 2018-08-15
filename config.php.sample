@@ -1,0 +1,23 @@
+<?php
+// database
+$_DB = array(
+	array(
+		'SERVER'   => 'localhost',
+		'USERNAME' => 'root',
+		'PASSWORD' => 'root',
+		'DATABASE' => 'binary'
+		)
+	);
+date_default_timezone_set('Asia/Jakarta');
+//system...
+define('_URI', '/binary/');
+define('_URL', 'http://'.@$_SERVER['HTTP_HOST']._URI);
+define('_ROOT', dirname(__FILE__).'/');
+define('_MST', '/var/www/html/master/|/var/www/html/binary/');
+define('_SALT', '9efddd1d91e3b0eed82e88311478b98f');
+define('_SEO', 1);
+
+define('_GMAP_KEY', 'AIzaSyA-AXePSSlRot2kavwPynqugo_97vY-FSY'); // https://developers.google.com/maps/documentation/javascript/get-api-key
+
+ini_set('display_errors', 1);
+error_reporting(E_ALL);

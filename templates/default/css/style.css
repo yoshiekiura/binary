@@ -1,0 +1,182 @@
+@import url('../../admin/bootstrap/css/bootstrap.min.css');
+@import url('../../admin/bootstrap/css/font-awesome.min.css');
+@import url('fonts.css');
+@import url('custom.css');
+.finance-theme .client-slider {
+  background: none;
+  margin-bottom: 0px;
+}
+.client-slider h2{
+  font-size: 30px;
+}
+/*detail staff*/
+.finance-theme .our-blog-one .blog-grid-post .single-blog .post h5 {
+  font-weight: 700;
+  color: #393939;
+  line-height: 28px;
+  display: block;
+  margin-bottom: 13px;
+}
+.finance-theme .blog-inner-page {
+    padding-bottom: 10px;
+}
+.finance-theme .theme-inner-banner.none {
+  background-color: #ccc;
+  margin-bottom: 30px;
+}
+.finance-theme .theme-inner-banner.none .opacity {
+  padding: 20px 0;
+}
+.finance-theme .theme-inner-banner.none h2 {
+  margin-bottom: 10px;
+}
+.finance-theme{line-height: 23px;}
+.finance-theme .finance-offer .single-offer {
+  margin-top: 0;
+  padding: 0;
+}
+.single-offer img,
+.single-offer a
+{
+  display: block;
+}
+.img-thumbnail.icon{
+  margin-bottom: 10px;
+  width: 100%;
+}
+.img-thumbnail {
+border: 0px; padding: 0px; border-radius: 0px;
+}
+.finance-theme .finance-offer .single-offer h5 a {
+margin-top: 20px;
+}
+.finance-header .top-header {
+    padding: 36px 0 20px;
+}
+/*.single-blog {
+  height: 456px;
+  overflow: hidden;
+}*/
+#mega-menu-holder > ul > li > a{
+  padding: 18px 23px;
+}
+
+
+.finance-theme .finance-offer {
+  margin: 0;
+}
+.finance-theme .theme-inner-banner {
+  margin-bottom: 40px;
+  height: 200px;
+  margin-left: -33%;
+  margin-right: -33%;
+}
+.finance-theme .theme-inner-banner .opacity {
+  padding: 60px 0 1px;
+}
+.finance-header{
+  margin-bottom: 20px;
+}
+.finance-theme .our-blog-one.blog-inner-page .blog-grid-post img {
+  object-fit: contain;
+  height: 300px;
+}
+.finance-theme .our-blog-one h2 {
+  font-weight: normal;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  text-align: center;
+}
+.our-blog-one {
+  margin-top: 45px;
+}
+
+/*blocks logo*/
+.official:nth-child(1){
+  padding-left: 0;
+}
+.official:nth-child(2){
+  padding-right: 0;
+}
+.official h3{
+  font-size: 18px;
+  color: #fff
+}
+.official_caption{
+  padding: 5px;
+  background-color: #1B62B7;
+  color: #fff
+}
+.official{
+  margin-bottom: 15px;
+}
+.official img{
+  height: 195px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*slider*/
+.rev_slider_wrapper,
+.rev_slider,
+.rev_slider_wrapper img
+{
+  height: 385px !important;
+}
+
+
+/* EXTRA SMALL */
+@media (max-width: 768px) {
+  .finance-theme .theme-inner-banner h2 {
+    font-size: 30px;
+  }
+  .finance-theme .theme-inner-banner {
+    margin-bottom: 10px;
+    height: 160px;
+  }
+  .finance-theme .our-blog-one.blog-inner-page .blog-grid-post {
+    padding: 20px;
+  }
+  .our-blog-one {
+    margin-top: 5px;
+  }
+  .finance-theme .our-blog-one h2 {
+    font-size: 30px;
+  }
+  .search-form{
+    float: none;
+  }
+  .top-header img{
+    height: auto !important;
+  }
+  .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
+    height: 200px;
+    object-fit: cover;
+  }
+  .finance-theme .finance-offer .title h2 {
+    font-size: 23px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+  .theme-main-menu > .container{
+    padding: 0 !important;
+  }
+  .menu-collapser{
+    padding: 0 15px;
+  }
+  .main-container{
+    background-image: -webkit-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+    background-image: -o-linear-gradient(top,#f5f5f5 0,#e8e8e8 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#e8e8e8));
+    background-image: linear-gradient(to bottom,#f5f5f5 0,#e8e8e8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+    background-repeat: repeat-x;
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: #ddd;
+  }
+  .collapse-button .icon-bar {
+    background: #2f4991;
+  }
+}
+

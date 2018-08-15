@@ -1,0 +1,26 @@
+.well {
+	margin: 0;
+	clear: both;
+}
+.well h3 {
+	clear: both;
+	margin: 0;
+	cursor: pointer;
+}
+.well .well {
+	clear: both;
+	margin: 0;
+}
+.well > h3 > .date {
+	text-align: right;
+	float: right;
+}
+.well > div > i {
+	display: block;
+}
+.well > div > i > .date {
+	float: right;
+}
+input.reply {
+	width: 100%;
+}

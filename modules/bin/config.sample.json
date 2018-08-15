@@ -1,0 +1,311 @@
+{
+	"plan_a": {
+		"prefix": "GS",
+		"group_id": 3,
+		"price": 350000,
+		"serial_use": 1, // 0=there is only one serial type called regular, 1=some types for serial
+		"serial_list": ["Silver", "Gold", "Platinum"],
+		"serial_price": [350000, 400000, 500000],
+		"serial_check": 1, // Make sure that sponsor must bought the serial before its used by future member
+		"is_withdraw": 0, // auto withdraw is active to get bonus (no ned to widraw the bonus)
+		"min_transfer": 100000, // minimum transfer
+		"surcharge": 500, // additional surcharge for every transfer
+		"surcharge_npwp": "5%", // additional surcharge for member with NPWP
+		"surcharge_npwp_no": "6%", // additional surcharge for member without NPWP
+		"bonus_node": [1000, 500, 100], // bonus titik menggunakan jalur upline
+		"bonus_gen_node": [500, 250, 50], // Bonus generasi titik untuk sponsor dari upline menggunakan jalur sponsor
+		"bonus_sponsor": [40000, 5000, 1000, 250],
+		"bonus_pair": [20000, 2000, 100],
+		"flushout_total": 12,
+		"flushout_time": 1,
+		"flushout_duration": "DAY",
+		"flushwait": 1,
+		"flushwait_time": 1,
+		"flushwait_duration": "WEEK",
+		"reward_use": 1, // do we need reward?
+		"reward_list": ["Sandal", "Sepatu", "Sepeda", "Motor", "Mobil", "Rumah", "Hotel"],
+		"reward_auto": 1, // do member get reward automatically or manually by claim
+		"level_list": ["Starter", "Leader", "Executive", "Manager", "Director"]
+		},
+    "reward": [
+        {
+            "id": "1",
+            "name": "Sandal",
+            "image": "",
+            "images": "",
+            "description": "",
+            "amount": "0",
+            "total_sponsor": "2",
+            "total_left": "1",
+            "total_right": "1",
+            "level_id": "0",
+            "serial_type_id": "0",
+            "accumulate": "0",
+            "active": "1"
+        },
+        {
+            "id": "2",
+            "name": "Sepatu",
+            "image": "",
+            "images": "",
+            "description": "",
+            "amount": "0",
+            "total_sponsor": "4",
+            "total_left": "2",
+            "total_right": "2",
+            "level_id": "0",
+            "serial_type_id": "0",
+            "accumulate": "0",
+            "active": "1"
+        },
+        {
+            "id": "3",
+            "name": "Sepeda",
+            "image": "",
+            "images": "",
+            "description": "",
+            "amount": "0",
+            "total_sponsor": "6",
+            "total_left": "3",
+            "total_right": "3",
+            "level_id": "0",
+            "serial_type_id": "0",
+            "accumulate": "0",
+            "active": "1"
+        },
+        {
+            "id": "4",
+            "name": "Motor",
+            "image": "",
+            "images": "",
+            "description": "",
+            "amount": "0",
+            "total_sponsor": "8",
+            "total_left": "4",
+            "total_right": "4",
+            "level_id": "0",
+            "serial_type_id": "0",
+            "accumulate": "0",
+            "active": "1"
+        },
+        {
+            "id": "5",
+            "name": "Mobil",
+            "image": "",
+            "images": "",
+            "description": "",
+            "amount": "0",
+            "total_sponsor": "10",
+            "total_left": "5",
+            "total_right": "5",
+            "level_id": "0",
+            "serial_type_id": "0",
+            "accumulate": "0",
+            "active": "1"
+        },
+        {
+            "id": "6",
+            "name": "Rumah",
+            "image": "",
+            "images": "",
+            "description": "",
+            "amount": "0",
+            "total_sponsor": "12",
+            "total_left": "6",
+            "total_right": "6",
+            "level_id": "0",
+            "serial_type_id": "0",
+            "accumulate": "0",
+            "active": "1"
+        },
+        {
+            "id": "7",
+            "name": "Hotel",
+            "image": "",
+            "images": "",
+            "description": "",
+            "amount": "0",
+            "total_sponsor": "14",
+            "total_left": "7",
+            "total_right": "7",
+            "level_id": "0",
+            "serial_type_id": "0",
+            "accumulate": "0",
+            "active": "1"
+        }
+    ],
+    "level": [
+        {
+            "id": "1",
+            "name": "Starter",
+            "total_sponsor": "2",
+            "total_left": "1",
+            "total_right": "1",
+            "serial_type_id": "0"
+        },
+        {
+            "id": "2",
+            "name": "Leader",
+            "total_sponsor": "4",
+            "total_left": "2",
+            "total_right": "2",
+            "serial_type_id": "0"
+        },
+        {
+            "id": "3",
+            "name": "Executive",
+            "total_sponsor": "6",
+            "total_left": "3",
+            "total_right": "3",
+            "serial_type_id": "0"
+        },
+        {
+            "id": "4",
+            "name": "Manager",
+            "total_sponsor": "8",
+            "total_left": "4",
+            "total_right": "4",
+            "serial_type_id": "0"
+        },
+        {
+            "id": "5",
+            "name": "Director",
+            "total_sponsor": "10",
+            "total_left": "5",
+            "total_right": "5",
+            "serial_type_id": "0"
+        }
+    ],
+    "balance": [
+        {
+            "id": "1",
+            "credit": "0",
+            "finance": "1",
+            "balance": "1",
+            "name": "aktifasi member",
+            "description": "aktifasi [username]",
+            "message": "aktifasi [username]",
+            "active": "1"
+        },
+        {
+            "id": "2",
+            "credit": "1",
+            "finance": "1",
+            "balance": "1",
+            "name": "pembayaran",
+            "description": "pembayaran dari admin [bank_info]",
+            "message": "pembayaran dari admin [bank_info]",
+            "active": "1"
+        },
+        {
+            "id": "3",
+            "credit": "1",
+            "finance": "0",
+            "balance": "1",
+            "name": "bonus titik",
+            "description": "bonus titik dari ID [username] di [position]",
+            "message": "bonus titik dari ID [username] di [position]",
+            "active": "1"
+        },
+        {
+            "id": "4",
+            "credit": "1",
+            "finance": "0",
+            "balance": "1",
+            "name": "bonus sponsor",
+            "description": "bonus sponsor dari ID [username]",
+            "message": "bonus sponsor dari ID [username]",
+            "active": "1"
+        },
+        {
+            "id": "5",
+            "credit": "1",
+            "finance": "0",
+            "balance": "1",
+            "name": "bonus pasangan",
+            "description": "bonus pasangan dari ID [match1] dan [match2] ",
+            "message": "bonus pasangan dari ID [match1] dan [match2] ",
+            "active": "1"
+        },
+        {
+            "id": "6",
+            "credit": "1",
+            "finance": "0",
+            "balance": "1",
+            "name": "bonus level titik",
+            "description": "bonus level titik dari ID [username] di level [level]",
+            "message": "bonus level titik dari ID [username] di level [level]",
+            "active": "1"
+        },
+        {
+            "id": "7",
+            "credit": "1",
+            "finance": "0",
+            "balance": "1",
+            "name": "bonus generasi titik",
+            "description": "bonus generasi titik dari ID [username] di level [level]",
+            "message": "bonus generasi titik dari ID [username] di level [level]",
+            "active": "1"
+        },
+        {
+            "id": "8",
+            "credit": "1",
+            "finance": "0",
+            "balance": "1",
+            "name": "bonus generasi sponsor",
+            "description": "bonus generasi sponsor dari ID [username] di level [level]",
+            "message": "bonus generasi sponsor dari ID [username] di level [level]",
+            "active": "1"
+        },
+        {
+            "id": "9",
+            "credit": "1",
+            "finance": "0",
+            "balance": "1",
+            "name": "bonus generasi pasangan",
+            "description": "Bonus generasi pasangan dari ID [username] di level [level]",
+            "message": "Bonus generasi pasangan dari ID [username] di level [level]",
+            "active": "1"
+        },
+        {
+            "id": "10",
+            "credit": "1",
+            "finance": "1",
+            "balance": "0",
+            "name": "biaya operasional",
+            "description": "pengeluaran biaya untuk keperluan [operasional]",
+            "message": "pengeluaran biaya untuk keperluan [operasional]",
+            "active": "1"
+        },
+        {
+            "id": "11",
+            "credit": "1",
+            "finance": "0",
+            "balance": "0",
+            "name": "kualifikasi reward",
+            "description": "ID [username] kualifikasi atas [reward]",
+            "message": "ID [username] kualifikasi atas [reward]",
+            "active": "1"
+        },
+        {
+            "id": "12",
+            "credit": "1",
+            "finance": "1",
+            "balance": "0",
+            "name": "penerimaan reward",
+            "description": "ID [username] telah mendapatkan [reward]",
+            "message": "ID [username] telah mendapatkan [reward]",
+            "active": "1"
+        },
+        {
+            "id": "13",
+            "credit": "0",
+            "finance": "1",
+            "balance": "1",
+            "name": "Klaim Perusahaan",
+            "description": "klaim perusahaan atas bonus dan reward dari [member]",
+            "message": "klaim perusahaan atas bonus dan reward dari [member]",
+            "active": "1"
+        }
+    ]
+}

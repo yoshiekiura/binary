@@ -1,0 +1,95 @@
+.bin-board {
+  width: 100%;
+  overflow: auto;
+  margin: 0 0 30px 0;
+}
+.bin-board table td {
+  text-align: center;
+  vertical-align: top;
+  border: none;
+  background: none;
+  padding: 0 5px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+.bin-board table td > div {
+  clear: both;
+  width: 120px;
+  /*min-height: 120px;*/
+  padding: 20px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  text-align: center;
+}
+.bin-board table td > div > small {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 80px;
+  display: inline-block;
+}
+.bin-board table td > div > b {
+  white-space: nowrap;
+  display: inline-block;
+}
+.bin-board table td > div > b.first, .bin-board table td > div > b.end {
+  max-width: 40px;
+  display: inline-block;
+  width: calc(50% + 1.2em);
+  font-weight: 400px;
+}
+.bin-board table td > div > b.end {
+  width: calc(50% - 1.2em);
+  justify-content:flex-end;
+  display: inline-flex;
+}
+.bin-board table td > div > b:hover, .bin-board table td > div > small:hover, .bin-board table td > div > span:hover {
+  cursor: pointer;
+  color: #a00000;
+  text-decoration: underline;
+}
+.bin-board table td > div > h1 {
+  margin: 17px 0;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 500;
+}
+.bin-board table td > div > h1:hover {
+  cursor: pointer;
+  color: #a00000;
+}
+.bin-board table td > span {
+  border: none;
+  border-top: 1px solid #ddd;
+  height: 15px;
+  width: 100%;
+  display: block;
+  background: url('images/dot.png');
+  background-image: url('images/dot.png');
+  background-repeat: repeat-y;
+  background-position: center;
+}
+.bin-board table td:first-child > span {
+  width: 50%;
+  float: right;
+  border-left: 1px solid #ddd;
+  background: none;
+  margin-right: -10px;
+}
+.bin-board table td:last-child > span {
+  width: 50%;
+  float: left;
+  border-right: 1px solid #ddd;
+  background: none;
+  margin-left: -10px;
+}
+.bin-board table.header > tbody > tr > td > span,
+.bin-board table.header > tr > td > span {
+  display: none;
+}

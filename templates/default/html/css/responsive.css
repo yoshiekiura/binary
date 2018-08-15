@@ -1,0 +1,170 @@
+/* Responsive CSS Document */
+
+/* 
+    Created on   : 20/10/2017. 
+    Theme Name   : Finpro.
+    Description  : Finpro - finance and business template.
+    Version      : 1.0.
+    Author       : @Unifytheme.
+    Developed by : @Unifytheme.
+   
+*/
+
+
+
+@media (min-width: 992px) {
+	.container {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+@media (max-width: 1199px) {
+  .default-footer .top-footer .footer-latest-news,.default-footer .top-footer .footer-list,
+  .default-footer .top-footer .footer-subscribe {padding-left: 15px;}
+}
+/*(max-width: 1199px)*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .finance-theme .search-form form {width: 280px;}
+  .finance-header .right-side li.address {margin-right: 30px;}
+  #mega-menu-holder>ul> li> a {padding: 18px 20px;}
+  .about-top-text-one .text {padding-left: 30px;}
+  .about-top-text-one .text h3 br {display: none;}
+  .finance-theme .our-service-style-one .single-service {padding-left: 15px;}
+  .finance-theme .our-blog-one .blog-side-post .show-post .post h5 a {font-size: 16px;}
+  .our-project-style-one #mixitUp-item .mix {width: 33.333333%;}
+  .finance-theme .our-service-details .middle-text .right-side {padding-left: 20px;}
+  .finance-theme .our-service-details .middle-text .right-side ul li {width: 100%;}
+  .theme-default-project-details .project-large-sidebar .bottom-text .right-side {padding-left: 30px;}
+  .shop-details .single-product-details img {width: 40%;}
+  .shop-details .single-product-details .product-order-details {width: 60%;}
+  .shop-details .review-tab .nav-tabs > li > a {padding: 0 35px;}
+}
+/*(min-width: 992px) and (max-width: 1199px)*/
+
+
+@media (max-width: 991px) {
+  .finance-header .top-header .logo {width: 100%;text-align: center;margin-bottom: 30px;}
+  .finance-header .top-header {padding-top: 30px;}
+  .theme-main-menu .menu-wrapper {padding-bottom: 1px;}
+  .finance-theme .theme-main-menu #mega-menu-holder > ul > li:before {display: none;}
+  .finance-theme .search-form form {width: 100%;}
+  .finance-theme .finance-offer .title h2 br {display: none;}
+  .about-top-text-one .text {width: 100%;padding: 50px 0 0 0;}
+  .finance-theme .short-banner h4,.finance-theme .short-banner a,
+  .bottom-footer-banner h3,.bottom-footer-banner a {float: none;}
+  .finance-theme .short-banner h4,.bottom-footer-banner h3 {margin: 0 0 15px 0;}
+  .finance-theme .short-banner,.bottom-footer-banner {text-align: center;}
+  .finance-theme .our-blog-one .blog-side-post {margin-top: 100px;}
+  .default-footer .row [class*="col-"] {margin-bottom: 60px;}
+  .default-footer .bottom-footer {margin-top: 0;}
+  .finance-header.style-two .logo {position: absolute;top:0;left:0;z-index: 99;}
+  .finance-header.style-two .theme-main-menu .menu-wrapper {width: 100%;}
+  .finance-header.style-two .collapse-button {float: right;margin-top: 18px;}
+  .finance-header.style-two #mega-menu-holder {background: #21201e;}
+  .finance-header.style-two #mega-menu-holder>ul> li> a {border-bottom: solid 1px #292929;}
+  .finance-header.style-two #mega-menu-holder>ul> li:first-child> a {border-top: 1px solid #292929;}
+  .finance-header.style-two #mega-menu-holder li .sub-toggle {border-left:1px solid #292929;}
+  .finance-header.style-two #mega-menu-holder>ul> li:hover> a {background: #1b1a19;}
+  .service-sidebar {margin-top: 80px;}
+  .shop-sidebar,.theme-blog-sidebarOne {margin-top: 100px;}
+  .theme-default-project-details .project-large-sidebar {padding-bottom: 0;}
+  .theme-contact-page-styleOne .contactUs-address {padding: 50px 0 0 0;}
+}
+/*(max-width: 991px)*/
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .finance-header .right-side li.address {margin-right: 15px;}
+  .about-top-text-one .img-box {width: 70%;}
+  .our-project-style-one #mixitUp-item .mix {width: 33.333333%;}
+  .finance-theme .our-service-details .middle-text .right-side ul li {width: 100%;}
+  .finance-theme .mixitUp-menu li {margin: 0 10px;}
+  .shop-details .single-product-details .product-order-details {width: 55%;}
+  .shop-details .single-product-details img {width: 45%;}
+}
+/*(min-width: 768px) and (max-width: 991px)*/
+
+@media (max-width: 767px) {
+  .finance-header .right-side li {margin: 0 20px 15px 20px !important;}
+  .about-top-text-one .img-box,.finance-theme .pricing-plan .float-left {width: 100%;}
+  .finance-theme .our-service-style-one .finance-title-one a {position: static;margin-top: 25px;}
+  .default-footer .bottom-footer p,.default-footer .bottom-footer ul {float: none;text-align: center;}
+  .default-footer .bottom-footer ul li {margin: 20px 4px 0 4px;}
+  .our-project-style-one #mixitUp-item .mix {width: 50%;}
+  .finance-theme .our-service-details .middle-text img {width: auto;float: none;}
+  .finance-theme .our-service-details .middle-text .right-side {width: 100%;float:none;padding: 50px 0 0 0;}
+  .finance-theme .our-project-style-two p.title br, .finance-theme .our-project-style-one p.title br {display: none;}
+  .theme-default-project-details .project-large-sidebar .bottom-text .left-side,
+  .shop-details .single-product-details img,.finance-theme .blog-details-content .blog-post .post-quote img {width: 70%;}
+  .theme-default-project-details .project-large-sidebar .bottom-text .right-side {width: 100%;padding:30px 0 0 0;}
+  .finance-title-one h6 br {display: none;}
+  .shop-details .single-product-details .product-order-details {width: 100%;padding: 40px 0 0 0;}
+  .finance-theme .blog-details-content .blog-post .post-quote p {width: 100%;margin-top: 40px;padding-left: 35px;}
+  .finance-theme .blog-details-content .blog-post .post-quote p i.fa-quote-left {left:0;}
+  #banner .tp-caption h1 {font-size: 45px;}
+  #banner .tp-caption h1 br,#banner .tp-caption h6 br {display: none;}
+}
+/*(max-width: 767px)*/
+
+@media (max-width: 650px) {
+   #success,#error {
+      width: 84%;
+      height: auto;
+      top: calc(50% - 50px);
+      left: 8%;
+      padding: 30px 10px;
+  }
+  .about-top-text-one .text h3 br {display: none;}
+  .error-page form {width: 100%;margin-top: 20px;}
+  .theme-blog-large-sideOne .comment-area .single-comment.reply-comment {margin-left: 20px;}
+  .theme-blog-large-sideOne .comment-area .main-comment {padding-left: 10px;padding-right: 10px;}
+}
+
+@media (max-width: 550px) {
+  .finance-theme .our-service-style-one .col-xs-6,.our-project-style-one #mixitUp-item .mix,
+  .finance-theme .service-large-sidebar .col-xs-6,.finance-theme .our-blog-one .blog-grid-post .col-xs-6,
+  .finance-theme .blog-details-content .share-option ul {width: 100%;}
+  .finance-theme .blog-details-content .share-option .float-right {margin-top: 20px;}
+}
+
+
+@media (max-width: 500px) {
+  .finance-theme .client-slider .item .wrapper {padding-left: 30px;}
+  .finance-theme .client-slider .item .wrapper img {width: 80px;height: 80px;}
+  .finance-theme .client-slider .item .wrapper .text {width: calc(100% - 80px);}
+  .finance-theme .our-blog-one .blog-side-post {margin-top: 70px;}
+  .finance-theme .our-project-style-two .col-xs-6,.shop-product .col-xs-6 {width: 100%;}
+  .shop-details .review-tab .nav-tabs > li {float: none;}
+  .shop-details .review-tab .nav-tabs > li > a {padding: 0;text-align: center;}
+}
+
+@media (max-width: 450px) {
+  .finance-theme .our-service-details .middle-text .right-side ul li,
+  .theme-team-style-one .col-xs-6 {width: 100%;}
+  .finance-theme .our-service-details .details-box p {padding-left: 10px;padding-right: 10px;}
+  .finance-theme .theme-inner-banner h2 {font-size: 50px;}
+  .shop-page .top-select-section>li {width: 100%;}
+  .shop-page .top-select-section>li:last-child {margin-top: 20px;}
+  .theme-blog-large-sideOne .comment-area .single-comment button {position: static;margin-top: 15px;}
+  .theme-contact-page-styleOne .contactUs-address .single-address .text {width: 100%;padding: 5px 0 0 0;}
+  #banner .tp-caption h6 {font-size: 16px;line-height: 30px;}
+}
+
+@media (max-width: 400px) {
+  .finance-theme .about-finance .counter-number .col-xs-6,
+  .theme-default-project-details .project-large-sidebar .bottom-text .left-side,
+  .shop-details .single-product-details img,.finance-theme .blog-details-content .blog-post .post-quote img {width: 100%;}
+  .finance-theme .about-finance .counter-number .wrapper {margin-top: 60px;}
+  .finance-theme .counter-banner p {font-size: 16px;margin-bottom: 30px}
+  .finance-theme .counter-banner h2 {font-size: 40px;}
+  .shop-details .single-product-details .product-order-details .clearfix a {float: none;margin-top: 20px;}
+  .shop-details .single-product-details .product-order-details .clearfix>ul {float: none;}
+}
+
+@media (max-width: 360px) {
+  .finance-theme .client-slider .item .wrapper img {float: none;margin: 0 auto;}
+  .finance-theme .client-slider .item .wrapper .text {width: 100%;padding: 30px 0 0 0;}
+  .theme-default-project-details .project-large-sidebar .image-gallery .col-8,
+  .theme-default-project-details .project-large-sidebar .image-gallery .col-4 {width: 100%;}
+}
