@@ -237,9 +237,19 @@ function bin_up_sponsor($config, $new, $current, $sponsor, $level = 0, $next = 0
 		// $db->Execute("COMMIT");
 	}
 	$next++;
+	// jika bonus generasi sponsor level 1 di dapat oleh sponsor pembawa member itu sendiri
+	if ($level==1 && !empty($config['bonus_sponsor_double']))
+	{
+		$upsponsor = $sponsor;
+	}else{
+		$upsponsor = bin_fetch_id($sponsor['sponsor_id']);
+		if ($upsponsor['id'] == $sponsor['id'])
+		{
+			unset($upsponsor);
+		}
+	}
 	// recall function
-	$upsponsor = bin_fetch_id($sponsor['sponsor_id']);
-	if (!empty($upsponsor) && $upsponsor['id']!=$sponsor['id'])
+	if (!empty($upsponsor))
 	{
 		if ($newtask)
 		{

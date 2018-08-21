@@ -57,34 +57,35 @@ function bin_marketplan_validate($input)
 				{
 					$config  = $input['plan_a'];
 					$default = array(
-						'group_id'           => 3,
-						'prefix'             => '',
-						'price'              => 0,
-						'serial_use'         => true,
-						'serial_list'        => [],
-						'serial_price'       => [],
-						'serial_flushout'    => [],
-						'serial_flushout_ok' => 0,
-						'serial_check'       => true,
-						'is_withdraw'        => false,
-						'min_transfer'       => 0,
-						'surcharge'          => '0',
-						'surcharge_npwp'     => '0',
-						'surcharge_npwp_no'  => '0',
-						'bonus_node'         => [],
-						'bonus_gen_node'     => [],
-						'bonus_sponsor'      => [],
-						'bonus_pair'         => [],
-						'flushout_total'     => 0,
-						'flushout_time'      => 0,
-						'flushout_duration'  => '',
-						'flushwait'          => 0,
-						'flushwait_time'     => 0,
-						'flushwait_duration' => '',
-						'reward_use'         => true,
-						'reward_list'        => [],
-						'reward_auto'        => true,
-						'level_list'         => [],
+						'group_id'             => 3,
+						'prefix'               => '',
+						'price'                => 0,
+						'serial_use'           => true,
+						'serial_list'          => [],
+						'serial_price'         => [],
+						'serial_flushout'      => [],
+						'serial_flushout_ok'   => 0,
+						'serial_check'         => true,
+						'is_withdraw'          => false,
+						'min_transfer'         => 0,
+						'surcharge'            => '0',
+						'surcharge_npwp'       => '0',
+						'surcharge_npwp_no'    => '0',
+						'bonus_node'           => [],
+						'bonus_gen_node'       => [],
+						'bonus_sponsor'        => [],
+						'bonus_sponsor_double' => false,
+						'bonus_pair'           => [],
+						'flushout_total'       => 0,
+						'flushout_time'        => 0,
+						'flushout_duration'    => '',
+						'flushwait'            => 0,
+						'flushwait_time'       => 0,
+						'flushwait_duration'   => '',
+						'reward_use'           => true,
+						'reward_list'          => [],
+						'reward_auto'          => true,
+						'level_list'           => [],
 						);
 					$output = array();
 					foreach ($default as $k => $dt)
@@ -546,9 +547,9 @@ function bin_check_func($func)
 			if ($mod!='bin' && function_exists($mod.'_'.$func2))
 			{
 				$output[$mod]['validasi'] = $mod.'_'.$func2.'()';
-				if(preg_match('~(?:/\*\*?([^(?:\*/)]+)\*/\s{0,}\n+\s{0,})?function\s{0,}'.$mod.'_'.$func2.'\s{0,}\(~is', file_read($path.$mod.'/_function.php'), $match))
+				if(preg_match('~(?:/\*\*?(.*?)\*/\s{0,}\n+\s{0,})?function\s{0,}'.$mod.'_'.$func2.'\s{0,}\(~is', file_read($path.$mod.'/_function.php'), $match))
 				{
-					$output[$mod]['validasi'] = trim($match[1]);
+					$output[$mod]['validasi'] = @trim($match[1]);
 				}
 			}
 		}
@@ -563,7 +564,7 @@ function bin_check_func($func)
 				$key = $m[1];
 			}
 			$output[$mod][$key] = $mod.'_'.$func.'()';
-			if(preg_match('~(?:/\*\*?([^(?:\*/)]+)\*/\s{0,}\n+\s{0,})?function\s{0,}'.$mod.'_'.$func.'\s{0,}\(~is', file_read($path.$mod.'/_function.php'), $match))
+			if(preg_match('~(?:/\*\*?(.*?)\*/\s{0,}\n+\s{0,})?function\s{0,}'.$mod.'_'.$func.'\s{0,}\(~is', file_read($path.$mod.'/_function.php'), $match))
 			{
 				$output[$mod][$key] = @trim($match[1]);
 			}
@@ -579,7 +580,7 @@ function bin_check_func($func)
 			foreach ($values as $key => $msg)
 			{
 				$cls = $key=='validasi' ? 'warning' : 'success';
-				$text .= '<li class="list-group-item list-group-item-'.$cls.'">'.$key.': '.$msg.'.</li>';
+				$text .= '<li class="list-group-item list-group-item-'.$cls.'">'.$key.': '.$msg.'</li>';
 			}
 			$text .= '</li>';
 		}

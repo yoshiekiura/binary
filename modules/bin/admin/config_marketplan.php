@@ -29,7 +29,6 @@
 		<?php
 		if (!empty($config['serial_use']) && !empty($config['serial_list']))
 		{
-			// pr($config, __FILE__.':'.__LINE__);
 			?>
 			<div class="form-group">
 				<label>Tipe Serial</label>
@@ -195,6 +194,15 @@
 										}
 										?>
 									</ul>
+								</div>
+								<div class="form-group">
+
+								</div>
+								<?php
+								$text_double = !empty($config['bonus_sponsor_double']) ? 'sponsor itu sendiri (bukan sponsor di atasnya)' : 'member yang berada di atas sponsor tersebut';
+								?>
+								<div class="form-group">
+									Bonus Generasi Level 1 akan diterima oleh <?php echo $text_double; ?>
 								</div>
 								<?php
 							}

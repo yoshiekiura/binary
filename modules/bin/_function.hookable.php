@@ -41,7 +41,10 @@ function bin_bonus_node($config, $new, $current, $upline, $level)
 			$func($config, $new, $current, $upline, $level);
 		}
 	}
-	bin_finance($upline['id'], $type_id, $config['bonus_node'][$level], $params);
+	if (!empty($config['bonus_node'][$level]))
+	{
+		bin_finance($upline['id'], $type_id, $config['bonus_node'][$level], $params);
+	}
 	if ($level==0)
 	{
 		if ($upline['sponsor_id']!=$upline['id'])
@@ -86,7 +89,10 @@ function bin_bonus_gen_node($config, $new, $current, $sponsor, $level)
 			$func($config, $new, $current, $sponsor, $level);
 		}
 	}
-	bin_finance($sponsor['id'], $type_id, $config['bonus_gen_node'][$level], $params);
+	if (!empty($config['bonus_gen_node'][$level]))
+	{
+		bin_finance($sponsor['id'], $type_id, $config['bonus_gen_node'][$level], $params);
+	}
 	if ($sponsor['sponsor_id']!=$sponsor['id'])
 	{
 		$level++;
@@ -137,7 +143,10 @@ function bin_bonus_pair($config, $new, $current, $upline, $level, $match2)
 			$func($config, $new, $current, $upline, $level, $match2);
 		}
 	}
-	bin_finance($upline['id'], $type_id, $config['bonus_pair'][$level], $params);
+	if (!empty($config['bonus_pair'][$level]))
+	{
+		bin_finance($upline['id'], $type_id, $config['bonus_pair'][$level], $params);
+	}
 	if ($upline['sponsor_id']!=$upline['id'])
 	{
 		$level++;
@@ -188,7 +197,10 @@ function bin_bonus_sponsor($config, $new, $current, $sponsor, $level)
 			$func($config, $new, $current, $sponsor, $level);
 		}
 	}
-	bin_finance($sponsor['id'], $type_id, $config['bonus_sponsor'][$level], $params);
+	if (!empty($config['bonus_sponsor'][$level]))
+	{
+		bin_finance($sponsor['id'], $type_id, $config['bonus_sponsor'][$level], $params);
+	}
 }
 function bin_bonus_sponsor_validate($config, $new, $current, $sponsor, $level)
 {

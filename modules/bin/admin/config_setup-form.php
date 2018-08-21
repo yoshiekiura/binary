@@ -237,7 +237,7 @@ if (!empty($_POST['submit']))
                 <div class="checkbox">
                   <label>
                     <input type="checkbox" name="bonus_node_gen" class="toggle" target="#bonus_node_gen" trigger=".add" value="1" />
-                    Aktifkan Bonus Level Titik
+                    Aktifkan Bonus Level Titik (jalur upline)
                   </label>
                 </div>
               </div>
@@ -250,7 +250,7 @@ if (!empty($_POST['submit']))
               <div class="checkbox">
                 <label>
                   <input type="checkbox" name="bonus_gen_node_ok" class="toggle" target="#bonus_gen_node" trigger=".add" value="1" />
-                  Aktifkan Bonus Generasi Titik
+                  Aktifkan Bonus Generasi Titik (jalur sponsor)
                 </label>
               </div>
               <div id="bonus_gen_node">
@@ -280,6 +280,10 @@ if (!empty($_POST['submit']))
                 <div class="level"></div>
                 <button type="button" class="btn btn-sm btn-default add" source=""><span class="glyphicon glyphicon-plus"></span> Tambah Level</button>
                 <button type="button" class="btn btn-sm btn-default reset" source=""><span class="glyphicon glyphicon-trash"></span> Reset</button>
+                <label style="font-weight: normal;">
+                  <input type="checkbox" name="bonus_sponsor_double" class="toggle" target="#bonus_sponsor" value="1" />
+                  Bonus Generasi Level 1 akan diterima oleh sponsor itu sendiri (bukan sponsor di atasnya)
+                </label>
               </div>
               <?php echo bin_check_func('bin_bonus_sponsor');?>
             </div>
